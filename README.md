@@ -1,4 +1,4 @@
-# postly-mcp
+# postlycloud-mcp
 
 [Postly Cloud](https://postlycloud.com) 이메일을 AI 도구(Claude 등)에서 바로 쓰게 해주는 **MCP 커넥터**입니다.
 
@@ -31,7 +31,7 @@ claude mcp add --transport http postly https://postlycloud.com/api/mcp \
 stdio MCP만 지원하는 클라이언트거나 `npx`로 쓰고 싶을 때:
 
 ```bash
-claude mcp add postly -e POSTLY_API_KEY=sk_live_여기에_키 -- npx -y postly-mcp
+claude mcp add postly -e POSTLY_API_KEY=sk_live_여기에_키 -- npx -y postlycloud-mcp
 ```
 
 또는 MCP 설정 파일에 직접:
@@ -41,7 +41,7 @@ claude mcp add postly -e POSTLY_API_KEY=sk_live_여기에_키 -- npx -y postly-m
   "mcpServers": {
     "postly": {
       "command": "npx",
-      "args": ["-y", "postly-mcp"],
+      "args": ["-y", "postlycloud-mcp"],
       "env": { "POSTLY_API_KEY": "sk_live_여기에_키" }
     }
   }
@@ -51,7 +51,7 @@ claude mcp add postly -e POSTLY_API_KEY=sk_live_여기에_키 -- npx -y postly-m
 npm 미게시 상태에서도 GitHub에서 바로 실행할 수 있습니다:
 
 ```json
-{ "command": "npx", "args": ["-y", "github:undefphoenixdev/postly-mcp"],
+{ "command": "npx", "args": ["-y", "github:undefphoenixdev/postlycloud-mcp"],
   "env": { "POSTLY_API_KEY": "sk_live_..." } }
 ```
 
