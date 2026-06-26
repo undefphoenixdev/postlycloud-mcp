@@ -1,0 +1,33 @@
+{
+  "name": "postly-mcp",
+  "version": "1.0.0",
+  "description": "Postly Cloud 이메일을 위한 MCP(stdio) 커넥터 — send/list/get/embed 메일함 도구를 AI 도구에서 사용",
+  "type": "commonjs",
+  "bin": {
+    "postly-mcp": "index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "email",
+    "postly",
+    "claude",
+    "smtp",
+    "dmarc"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/undefphoenixdev/postly-mcp.git"
+  },
+  "homepage": "https://postlycloud.com/docs"
+}
